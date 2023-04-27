@@ -2,48 +2,48 @@
 <html>
 
 <head>
-  <title>URL Input</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; font-src https://fonts.gstatic.com 'self'; script-src 'self'; style-src https://fonts.googleapis.com 'self' 'unsafe-inline' ">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Website Downloader</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Webflow site download</h1>
-        <form id='sendUrl' action="/" method="post">
-          <div class="form-group">
-            <label for="url">Insert Website URL</label>
-            <input type="text" class="form-control" name="url" id="url" placeholder="Enter URL"
-              value="https://business-site-bb9671.webflow.io">
-          </div>
-          <button id='submitBtn' type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <div id="message" style="margin-top: 20px; margin-bottom: 20px;"></div>
-        <button class="btn btn-success mt-2" onclick="downloadPDF()">Download PDF</button>
+    <h1>Website Downloader</h1>
+    <form id='form' action="/" method="post">
+      <label for="url">Insert a website URL (add https://)</label>
+      <input type="text" name="url" id="url" placeholder="Enter URL" value="https://business-site-bb9671.webflow.io">
+      <div class="settings-wrapper">
+        <div class="check-box-wrapper">
+          <label for="git">Save to git</label>
+          <input type="checkbox" name="git" id="git">
+        </div>
+        <div class="depth-wrapper">
+          <label for="depth">Download depth</label>
+          <select name="depth" id="depth">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option selected="selected" value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+
+          </select>
+        </div>
       </div>
-    </div>
+      <button id='submitBtn' type="submit">Download website</button>
+    </form>
+    <div id="message"></div>
   </div>
 
-  <script>
-    function downloadPDF() {
-      fetch('/download')
-        .then(response => response.blob())
-        .then(blob => {
-          const url = window.URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.style.display = 'none';
-          a.href = url;
-          a.download = 'website.zip';
-          document.body.appendChild(a);
-          a.click();
-          window.URL.revokeObjectURL(url);
-        });
-    }
-  </script>
-
-  <script src='./app.js'></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

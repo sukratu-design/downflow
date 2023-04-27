@@ -1,5 +1,4 @@
 const API_URL = 'http://localhost:5000/';
-const form = document.querySelector('#sendUrl');
 const submitButton = document.querySelector('#submitBtn');
 const message = document.querySelector('#message');
 
@@ -7,9 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
  submitButton.addEventListener('click', async (e) => {
   e.preventDefault();
   message.innerHTML = '';
-  const url = document.querySelector('#url').value;
+  const websiteUrl = document.querySelector('#url').value;
+  const git = document.querySelector('#git').checked;
+  const depth = document.querySelector('#depth').value;
   const data = {
-   'url': url,
+   websiteUrl,
+   git,
+   depth,
   };
   await sendUrl(data);
  });

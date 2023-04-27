@@ -1,16 +1,18 @@
 import scrape from 'website-scraper'; // only as ESM, no CommonJS
 import SaveToExistingDirectoryPlugin from 'website-scraper-existing-directory';
 
-async function scrapeWebsite(webflowUrl) {
+async function scrapeWebsite(formData) {
+ const { websiteUrl, depth } = formData;
+ console.log(websiteUrl, depth);
  const options = {
-  urls: [webflowUrl, 'https://uploads-ssl.webflow.com'],
+  urls: [websiteUrl, 'https://uploads-ssl.webflow.com'],
   urlFilter: function (url) {
-   return url.indexOf(webflowUrl) === 0 || url.indexOf('https://uploads-ssl.webflow.com') === 0;
+   return url.indexOf(websiteUrl) === 0 || url.indexOf('https://uploads-ssl.webflow.com') === 0;
   },
-  directory: 'G:/JavascriptProjects/Webflow-export/server/website-files',
+  directory: 'G:/JavascriptProjects/Donloaded Website',
   plugins: [new SaveToExistingDirectoryPlugin()],
   recursive: true,
-  maxRecursiveDepth: 5,
+  maxRecursiveDepth: depth,
  };
 
  // with async/await
