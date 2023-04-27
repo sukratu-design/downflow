@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>URL Input</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Webflow site download</h1>
+        <form id='sendUrl' action="/" method="post">
+          <div class="form-group">
+            <label for="url">Insert Website URL</label>
+            <input type="text" class="form-control" name="url" id="url" placeholder="Enter URL"
+              value="https://business-site-bb9671.webflow.io">
+          </div>
+          <button id='submitBtn' type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="message" style="margin-top: 20px; margin-bottom: 20px;"></div>
+        <button class="btn btn-success mt-2" onclick="downloadPDF()">Download PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function downloadPDF() {
+      fetch('/download')
+        .then(response => response.blob())
+        .then(blob => {
+          const url = window.URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.style.display = 'none';
+          a.href = url;
+          a.download = 'website.zip';
+          document.body.appendChild(a);
+          a.click();
+          window.URL.revokeObjectURL(url);
+        });
+    }
+  </script>
+
+  <script src='./app.js'></script>
+</body>
+
+</html>
