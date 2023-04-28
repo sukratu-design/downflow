@@ -7,7 +7,7 @@ async function getUrl(req, res) {
 
  try {
   const scrapedData = await scrapeWebsite(formData);
-  zipFile();
+  zipFile(formData);
 
   res.status(200).send({ message: 'You can now download' });
   return;
