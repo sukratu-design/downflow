@@ -1,5 +1,5 @@
 import express from 'express';
-import {getUrl} from '../controllers/index.js'
+import { getUrl } from '../controllers/index.js';
 
 const router = express.Router();
 
