@@ -15,14 +15,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/download', (req, res) => {
- const file = `${__dirname}/website-files-zipped/website.zip`;
- res.download(file);
-});
 
 import index from './routes/index.js';
+import download from './routes/download.js';
+
 
 app.use('/', index);
+app.use('/download', download);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

@@ -1,9 +1,13 @@
+import path from 'path';
+import { fileURLToPath } from 'url';
 import scrape from 'website-scraper'; // only as ESM, no CommonJS
+import Url from 'url-parse';
 import SaveToExistingDirectoryPlugin from 'website-scraper-existing-directory';
 import { removeBadge, badgeTexts } from '../utils/removeBadge.js';
-import Url from 'url-parse';
 
-const downloadDirectory = 'G:/JavascriptProjects/Donloaded Website';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const downloadDirectory = path.join(__dirname, '../Download');
 
 async function scrapeWebsite(formData) {
  const { websiteUrl, depth } = formData;
