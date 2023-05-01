@@ -19,7 +19,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 import index from './routes/index.js';
 import download from './routes/download.js';
 
-
 app.use('/', index);
 app.use('/download', download);
 
@@ -36,6 +35,6 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(
-  PORT,
-  console.log(`Server running in ${process.env.NODE_ENV} mode on port http://localhost:${PORT}`)
- );
+ PORT,
+ console.log(`Server running in ${process.env.NODE_ENV} mode on port http://localhost:${PORT}`)
+);

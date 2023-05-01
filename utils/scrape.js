@@ -4,10 +4,9 @@ import scrape from 'website-scraper'; // only as ESM, no CommonJS
 import Url from 'url-parse';
 import SaveToExistingDirectoryPlugin from 'website-scraper-existing-directory';
 import { removeBadge, badgeTexts } from '../utils/removeBadge.js';
+import paths from './paths.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const downloadDirectory = path.join(__dirname, '../Download');
+const { downloadDirectory } = paths;
 
 async function scrapeWebsite(formData) {
  const { websiteUrl, depth } = formData;
