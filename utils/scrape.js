@@ -1,6 +1,4 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
-import scrape from 'website-scraper'; // only as ESM, no CommonJS
+import scrape from 'website-scraper'; 
 import Url from 'url-parse';
 import SaveToExistingDirectoryPlugin from 'website-scraper-existing-directory';
 import { removeBadge, badgeTexts } from '../utils/removeBadge.js';
