@@ -1,4 +1,4 @@
-import scrape from 'website-scraper'; 
+import scrape from 'website-scraper';
 import Url from 'url-parse';
 import SaveToExistingDirectoryPlugin from 'website-scraper-existing-directory';
 import { removeBadge, badgeTexts } from '../utils/removeBadge.js';
@@ -6,7 +6,7 @@ import paths from './paths.js';
 
 const { downloadDirectory } = paths;
 
-async function scrapeWebsite(formData) {
+async function scrapeWebsite(formData, folderPathWithTimestamp) {
  const { websiteUrl, depth } = formData;
  const parsedUrl = new Url(websiteUrl);
 
@@ -25,7 +25,8 @@ async function scrapeWebsite(formData) {
     extensions: ['.avi', '.mp4', '.wmv', '.flv', '.mkv', '.swf', '.f4v', '.mov'],
    },
   ],
-  directory: `${downloadDirectory}/${parsedUrl.host}`,
+  directory: folderPathWithTimestamp,
+
   plugins: [new SaveToExistingDirectoryPlugin()],
   recursive: true,
   maxRecursiveDepth: depth,
@@ -33,7 +34,7 @@ async function scrapeWebsite(formData) {
 
  const result = await scrape(options);
  if (isWebflowSite(websiteUrl)) {
-  await removeBadge(downloadDirectory, badgeTexts);
+  await removeBadge(folderPathWithTimestamp, badgeTexts);
  }
 }
 

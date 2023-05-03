@@ -66,3 +66,4 @@ async function downloadFile(fileName) {
  window.URL.revokeObjectURL(url);
  document.body.removeChild(a);
 }
+

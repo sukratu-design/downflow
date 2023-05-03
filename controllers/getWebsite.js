@@ -1,21 +1,27 @@
 import { body, validationResult } from 'express-validator';
 import { scrapeWebsite } from '../utils/scrape.js';
-import { zipFile } from '../utils/zip.js';
+import { createZipFile } from '../utils/archiver.js';
 import Url from 'url-parse';
+import moment from 'moment';
+import paths from '../utils/paths.js';
+
+const { downloadDirectory } = paths;
 
 async function getUrl(req, res) {
  const formData = req.body;
  const { websiteUrl } = formData;
  const parsedUrl = new Url(websiteUrl);
  const websiteUrlHost = parsedUrl.host;
+ const timestamp = moment().format('YYYY-MM-DD-HH-mm-ss');
+ const folderPathWithTimestamp = `${downloadDirectory}/${timestamp}/${parsedUrl.host}`;
 
  try {
-  const scrapedData = await scrapeWebsite(formData);
-  zipFile(websiteUrlHost);
+  const scrapedData = await scrapeWebsite(formData, folderPathWithTimestamp);
+  createZipFile(websiteUrlHost, folderPathWithTimestamp);
 
-  res.status(200).send({ 
-    message: 'You can now download',
-    websiteUrlHost  
+  res.status(200).send({
+   message: 'You can now download',
+   websiteUrlHost,
   });
   return;
  } catch (err) {

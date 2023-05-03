@@ -1,22 +1,21 @@
 import express from 'express';
 import * as dotenv from 'dotenv';
 import cors from 'cors';
-import logger from 'logger';
+import path from 'path';
+
 import paths from './utils/paths.js';
-//import validateRequestBody from './middlewares/validateRequestBody.js';
+import index from './routes/getWebsite.js';
+import download from './routes/download.js';
+import logger from './utils/logger.js';
+dotenv.config();
 
 const { publicDirectory } = paths;
-
-dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 app.use(express.static(publicDirectory));
-
-import index from './routes/getWebsite.js';
-import download from './routes/download.js';
 
 app.use('/getWebsite', index);
 app.use('/download', download);
@@ -33,7 +32,6 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(
- PORT,
- console.log(`Server running in ${process.env.NODE_ENV} mode on port http://localhost:${PORT}`)
-);
+app.listen(PORT, () => {
+ logger.info(`Server running in ${process.env.NODE_ENV} mode on port http://localhost:${PORT}`);
+});

@@ -4,8 +4,7 @@ import paths from './paths.js';
 
 const { downloadDirectory, zippedDirectory } = paths;
 
-async function zipFile(websiteUrlHost) {
-
+async function zipFile(websiteUrlHost, folderPathWithTimestamp) {
  const dest = `${zippedDirectory}/${websiteUrlHost}.zip`;
  try {
   const stat = await fs.stat(dest);
@@ -17,7 +16,7 @@ async function zipFile(websiteUrlHost) {
    throw err;
   }
  }
- await zip(`${downloadDirectory}/${websiteUrlHost}`, dest);
+ await zip(`${folderPathWithTimestamp}`, dest);
 }
 
 export { zipFile };
