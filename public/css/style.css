@@ -55,9 +55,13 @@ input[type='text']:focus {
  border: 2px solid var(--primary-color);
 }
 
-button[type='submit'] {
- width: 250px;
- padding: 10px;
+.button-container {
+ display: flex;
+ gap: 20px;
+}
+
+button {
+ padding: 12px 36px;
  background-color: var(--primary-color);
  color: white;
  font-size: 16px;
@@ -130,7 +134,7 @@ input[type='checkbox']:checked::before {
  transform: scale(1);
 }
 
-button[type='submit']:hover {
+button:hover {
  background-color: #6459c3;
  transition: all 500ms ease;
 }
