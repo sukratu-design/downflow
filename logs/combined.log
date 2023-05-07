@@ -164,3 +164,301 @@
 {"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-03T18:44:23.796Z"}
 {"code":"ENOENT","errno":-4058,"level":"error","message":"Error deleting folder and zip file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io, G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io.zip ENOENT: no such file or directory, stat 'G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io'","path":"G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io","stack":"Error: ENOENT: no such file or directory, stat 'G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io'","syscall":"stat","timestamp":"2023-05-03T18:44:23.811Z"}
 {"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-03T18:46:26.584Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T16:09:27.087Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T16:09:38.134Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T16:12:01.179Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T16:16:25.612Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T16:16:38.962Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T16:17:22.106Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T16:17:55.851Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T17:01:24.959Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T17:02:01.342Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T17:28:07.076Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:12:32.429Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:13:01.944Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:15:02.912Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:16:17.749Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:19:07.242Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:21:33.969Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:22:28.007Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:22:28.084Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:23:02.443Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:23:04.657Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:23:04.669Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:24:35.223Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:25:35.343Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:25:35.408Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:27:49.679Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:27:49.776Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:30:03.183Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:30:11.889Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:30:11.971Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:33:45.458Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:33:58.115Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:33:58.125Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:35:41.803Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:35:56.757Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:36:02.184Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:36:16.955Z"}
+{"code":"ENOENT","errno":-4058,"expose":false,"level":"error","message":"Error downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip ENOENT: no such file or directory, stat 'G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io.zip'","path":"G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io.zip","stack":"Error: ENOENT: no such file or directory, stat 'G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io.zip'","status":404,"statusCode":404,"syscall":"stat","timestamp":"2023-05-04T19:36:16.961Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:38:03.347Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:38:19.610Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:38:56.827Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:39:24.189Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:39:27.068Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:40:18.387Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:40:27.997Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T19:41:32.459Z"}
+{"code":"ENOENT","errno":-4058,"expose":false,"level":"error","message":"Error downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip ENOENT: no such file or directory, stat 'G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io.zip'","path":"G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io.zip","stack":"Error: ENOENT: no such file or directory, stat 'G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io.zip'","status":404,"statusCode":404,"syscall":"stat","timestamp":"2023-05-04T19:41:32.464Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:43:09.586Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:44:36.705Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:47:01.626Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:47:25.378Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:47:52.820Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:51:04.011Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:52:52.117Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:54:49.631Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:55:46.210Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:55:59.514Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:57:30.442Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T19:59:57.417Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:00:30.819Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:02:52.911Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:03:52.317Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:06:02.289Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:06:13.036Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:06:58.485Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:07:27.428Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:08:17.227Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T20:08:31.589Z"}
+{"code":"ENOENT","errno":-4058,"expose":false,"level":"error","message":"Error downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped/business-site-bb9671.webflow.io.zip ENOENT: no such file or directory, stat 'G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io.zip'","path":"G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io.zip","stack":"Error: ENOENT: no such file or directory, stat 'G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\zipped\\business-site-bb9671.webflow.io.zip'","status":404,"statusCode":404,"syscall":"stat","timestamp":"2023-05-04T20:08:31.599Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:09:02.823Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:10:03.233Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:11:44.911Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:12:18.976Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:12:43.318Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/0c2afc36-a288-4772-83f6-30e8672a8763/business-site-bb9671.webflow.io","timestamp":"2023-05-04T20:12:56.522Z"}
+{"code":"EISDIR","level":"error","message":"Error downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/0c2afc36-a288-4772-83f6-30e8672a8763/business-site-bb9671.webflow.io EISDIR, read","stack":"Error: EISDIR, read\n    at SendStream.ondirectory (G:\\JavascriptProjects\\Website-downloader-WebApp\\node_modules\\express\\lib\\response.js:1062:15)\n    at SendStream.emit (node:events:513:28)\n    at SendStream.redirect (G:\\JavascriptProjects\\Website-downloader-WebApp\\node_modules\\send\\index.js:475:10)\n    at onstat (G:\\JavascriptProjects\\Website-downloader-WebApp\\node_modules\\send\\index.js:723:41)\n    at FSReqCallback.oncomplete (node:fs:208:5)","timestamp":"2023-05-04T20:12:56.533Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:15:19.603Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/b64c5e93-9737-4bcf-8376-c0b7e2f691fd/business-site-bb9671.webflow.io","timestamp":"2023-05-04T20:15:35.911Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/b64c5e93-9737-4bcf-8376-c0b7e2f691fd/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T20:15:35.925Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/b64c5e93-9737-4bcf-8376-c0b7e2f691fd/business-site-bb9671.webflow.io","timestamp":"2023-05-04T20:15:54.070Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/b64c5e93-9737-4bcf-8376-c0b7e2f691fd/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T20:15:54.074Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/b64c5e93-9737-4bcf-8376-c0b7e2f691fd/business-site-bb9671.webflow.io","timestamp":"2023-05-04T20:16:06.280Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/b64c5e93-9737-4bcf-8376-c0b7e2f691fd/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T20:16:06.282Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:17:26.124Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:17:42.791Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:18:32.250Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:20:35.281Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/614b4256-f592-435f-a695-c24a02c99aad/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T20:21:28.018Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/614b4256-f592-435f-a695-c24a02c99aad/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T20:21:28.084Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:23:13.379Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:23:57.858Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:24:17.055Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:24:28.569Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/d0d7ede6-e435-4b97-81ae-7eb50b0065bb/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T20:24:45.827Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/d0d7ede6-e435-4b97-81ae-7eb50b0065bb/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-04T20:24:45.909Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:28:47.398Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:29:02.964Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:43:02.152Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:45:42.529Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:46:31.125Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-04T20:47:18.737Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T17:39:53.706Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T17:44:46.819Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T17:45:44.915Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T17:48:56.045Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T17:50:09.651Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T17:50:28.889Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T17:51:35.561Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T17:53:27.978Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T17:53:48.062Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T17:55:07.035Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T17:55:20.170Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T17:57:12.801Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T18:00:24.527Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T18:01:17.324Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T18:02:50.379Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T18:07:05.072Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T18:08:25.150Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T18:08:51.394Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T18:08:57.880Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T18:09:53.188Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T18:10:12.476Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-06T18:10:23.484Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T06:52:50.028Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/8f0025b5-18ef-4f31-9c6b-a73d24d65866/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T06:53:01.284Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/8f0025b5-18ef-4f31-9c6b-a73d24d65866/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T06:53:01.354Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T06:54:30.642Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T06:56:07.524Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T06:57:01.780Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/ebcc8fbe-b6c9-4dcc-a9ac-90ac6c161e78/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T06:57:14.161Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/ebcc8fbe-b6c9-4dcc-a9ac-90ac6c161e78/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T06:57:14.227Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/ebcc8fbe-b6c9-4dcc-a9ac-90ac6c161e78/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T06:57:58.585Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/ebcc8fbe-b6c9-4dcc-a9ac-90ac6c161e78/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T06:57:58.588Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:02:22.011Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:02:40.329Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:02:49.565Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/cd1041a1-3627-407d-bad1-e7802a7deb9b/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T07:03:12.753Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:06:22.536Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:07:12.748Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:08:04.842Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:14:12.953Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:14:33.193Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/024a70b3-ba4b-45b8-b70e-239ecbfefff3/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T07:14:39.779Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:15:37.590Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:15:44.422Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/3943e1ef-e50f-462e-b7ea-0f72347744d4/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T07:15:53.252Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:20:07.195Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:20:22.501Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/d637a567-fe5e-41bd-a518-162cf07b756d/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T07:20:51.025Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:22:10.965Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/148239d5-59fb-4a74-a919-f93c00fca971/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T07:22:23.681Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:25:39.988Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:28:08.924Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/333f805b-b590-4db8-aa76-84b408e55363/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T07:28:25.710Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:30:18.419Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:31:23.877Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:31:57.895Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:32:09.783Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:32:27.204Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:43:12.444Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:46:22.403Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:46:34.791Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:46:46.842Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T07:48:35.245Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/f8ca9104-df86-4d57-a635-109fd3974d43/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T07:48:47.443Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T08:15:35.084Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/754a55dc-61b2-4651-9fa6-bff221cff709/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T08:15:55.114Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T08:16:31.121Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T08:17:19.395Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T09:44:08.738Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T09:46:24.578Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T09:46:53.317Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/a7415eab-881a-407e-969f-ab8df0864c12/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T09:47:41.267Z"}
+{"level":"info","message":"File deleted: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/a7415eab-881a-407e-969f-ab8df0864c12/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T09:47:41.273Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T09:49:07.365Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/917c8035-4b02-4a49-be8c-35c609763cf3/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T09:49:17.062Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T09:49:44.548Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T09:51:58.152Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/55966898-2946-4e81-9716-df148abfc70b/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T09:52:09.823Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T09:52:59.637Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/cbc6c4b9-f5d8-4da2-99ef-91d29176b380/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T09:53:12.149Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T09:54:23.366Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/6858527a-6e2c-4aac-ba83-1f32d23df928/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T09:54:35.272Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T09:55:01.739Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T09:57:15.327Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T09:58:53.910Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T10:01:40.491Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T10:12:04.919Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T10:15:48.089Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T10:15:58.720Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T10:16:57.067Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T10:18:35.931Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T10:18:38.005Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T10:26:11.270Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T11:56:42.747Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T11:58:27.230Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:04:18.332Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:04:26.987Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:05:54.485Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:08:19.423Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:12:02.351Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:13:25.997Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:14:37.936Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:15:00.799Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:15:22.443Z"}
+{"level":"info","message":{"directoryId":"3931dff0-50b9-45d1-ad36-7e4b70415e9d","websiteUrlHost":"business-site-bb9671.webflow.io"},"timestamp":"2023-05-07T12:15:36.566Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/3931dff0-50b9-45d1-ad36-7e4b70415e9d/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T12:15:36.628Z"}
+{"level":"info","message":{"directoryId":"3931dff0-50b9-45d1-ad36-7e4b70415e9d","websiteUrlHost":"business-site-bb9671.webflow.io"},"timestamp":"2023-05-07T12:18:09.990Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/3931dff0-50b9-45d1-ad36-7e4b70415e9d/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T12:18:09.993Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:20:41.408Z"}
+{"level":"info","message":{"directoryId":"03f7e06b-3e33-4e12-8c06-892757658789","websiteUrlHost":"business-site-bb9671.webflow.io"},"timestamp":"2023-05-07T12:35:56.935Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/03f7e06b-3e33-4e12-8c06-892757658789/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T12:35:57.001Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:38:21.700Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/c3b60094-941d-4efd-8055-0dcc1ccf83b0/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T12:38:27.493Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:39:25.142Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/cc8b3c7f-08c8-4a32-b88b-c93f25c637f9/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T12:39:41.454Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:44:31.621Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/d6811f2b-c1d4-4ee0-b5fe-9f1f65fda81f/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T12:44:44.505Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:51:05.123Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/a6875ca2-56ec-4445-93aa-a2bda26bda77/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T12:51:23.410Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:54:45.283Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:58:22.225Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:58:38.144Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T12:59:39.970Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:09:53.064Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:10:52.910Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:11:16.722Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:11:29.137Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:12:15.041Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:13:17.079Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:13:27.959Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:13:42.219Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:14:22.575Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:19:19.095Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/54bc57ac-ec06-42de-840e-f880402308a3/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T13:19:36.249Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/54bc57ac-ec06-42de-840e-f880402308a3/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T13:19:36.326Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:20:12.552Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:23:28.337Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:23:34.859Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/afc393be-5c04-4ed9-81e8-a041637793aa/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T13:23:59.909Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/afc393be-5c04-4ed9-81e8-a041637793aa/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T13:23:59.993Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:24:32.763Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/d649a0d6-c380-41c9-8d58-cdd7284b46a9/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T13:24:42.306Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/d649a0d6-c380-41c9-8d58-cdd7284b46a9/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T13:24:42.382Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:32:10.644Z"}
+{"level":"info","message":"Downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/4b8284e8-83ef-4273-9913-d8cf68aa436a/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T13:32:18.518Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/4b8284e8-83ef-4273-9913-d8cf68aa436a/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T13:32:18.591Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:35:24.602Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:39:10.182Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:39:54.275Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:40:48.539Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:41:19.485Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:43:19.096Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:43:56.447Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/8b171add-ff8b-43b0-ba8d-8bcd3cd95b83/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T13:44:08.159Z"}
+{"level":"info","message":"Directory deleted: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/8b171add-ff8b-43b0-ba8d-8bcd3cd95b83","timestamp":"2023-05-07T13:44:08.249Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:45:38.502Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/b8b008f7-811f-4020-a448-24eef696f831/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T13:46:20.404Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/b8b008f7-811f-4020-a448-24eef696f831/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T13:47:05.055Z"}
+{"level":"info","message":"Directory deleted: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/b8b008f7-811f-4020-a448-24eef696f831","timestamp":"2023-05-07T13:47:20.477Z"}
+{"code":"ENOENT","errno":-4058,"expose":false,"level":"error","message":"Error downloading file: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/b8b008f7-811f-4020-a448-24eef696f831/business-site-bb9671.webflow.io.zip ENOENT: no such file or directory, stat 'G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download\\b8b008f7-811f-4020-a448-24eef696f831\\business-site-bb9671.webflow.io.zip'","path":"G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download\\b8b008f7-811f-4020-a448-24eef696f831\\business-site-bb9671.webflow.io.zip","stack":"Error: ENOENT: no such file or directory, stat 'G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download\\b8b008f7-811f-4020-a448-24eef696f831\\business-site-bb9671.webflow.io.zip'","status":404,"statusCode":404,"syscall":"stat","timestamp":"2023-05-07T13:47:27.115Z"}
+{"level":"info","message":"Directory deleted: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/b8b008f7-811f-4020-a448-24eef696f831","timestamp":"2023-05-07T13:48:05.057Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:48:30.291Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T13:48:49.261Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:00:55.143Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/70a738ea-555b-4671-afb9-6834df7edb7a/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T14:01:06.214Z"}
+{"level":"info","message":"Directory deleted: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/70a738ea-555b-4671-afb9-6834df7edb7a","timestamp":"2023-05-07T14:03:06.265Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/4fc95f7c-a5c0-4500-b704-b449728836ab/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T14:04:20.680Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:05:08.747Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:05:17.436Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/285be36a-fc4b-4770-8265-ba18144b30f3/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T14:05:29.891Z"}
+{"level":"info","message":"Directory deleted: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/285be36a-fc4b-4770-8265-ba18144b30f3","timestamp":"2023-05-07T14:07:29.955Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:14:40.896Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/a1cf0971-d695-4a92-9612-d2540f61c290/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T14:15:00.266Z"}
+{"level":"info","message":"Directory deleted: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/a1cf0971-d695-4a92-9612-d2540f61c290","timestamp":"2023-05-07T14:17:00.318Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:19:05.103Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:19:29.787Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:19:40.083Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/716b499f-7c7d-42dc-8b40-d471b8370a23/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T14:19:53.280Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/716b499f-7c7d-42dc-8b40-d471b8370a23/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T14:19:56.856Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/aff26c68-415a-4fc5-8bb5-588f868ecc0f/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T14:20:26.319Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:21:38.885Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:21:51.399Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:25:25.902Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:26:21.048Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/f8606283-add9-4509-90ba-746a309e1b7b/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T14:26:32.922Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/32632a17-4529-4675-8337-93f4f4c6a49a/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T14:26:50.305Z"}
+{"level":"info","message":"Directory deleted: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/f8606283-add9-4509-90ba-746a309e1b7b","timestamp":"2023-05-07T14:28:32.977Z"}
+{"level":"info","message":"Directory deleted: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/32632a17-4529-4675-8337-93f4f4c6a49a","timestamp":"2023-05-07T14:28:50.356Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:39:23.627Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:40:17.085Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/89be4ec2-e7c4-411d-b2c2-61cfd2bec20b/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T14:40:43.111Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:41:45.265Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:42:03.745Z"}
+{"level":"info","message":"File downloaded: G:\\JavascriptProjects\\Website-downloader-WebApp\\public\\download/4d5ca2a4-b31b-4e39-8ef9-15988a308f4d/business-site-bb9671.webflow.io.zip","timestamp":"2023-05-07T14:42:16.023Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:44:22.620Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:44:25.826Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:44:36.048Z"}
+{"level":"info","message":"Server running in development mode on port http://localhost:5000","timestamp":"2023-05-07T14:45:01.131Z"}

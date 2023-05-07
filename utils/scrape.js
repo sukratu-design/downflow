@@ -1,14 +1,22 @@
 import scrape from 'website-scraper';
-import Url from 'url-parse';
 import SaveToExistingDirectoryPlugin from 'website-scraper-existing-directory';
 import { removeBadge, badgeTexts } from '../utils/removeBadge.js';
 import paths from './paths.js';
+import logger from '../utils/logger.js';
 
 const { downloadDirectory } = paths;
 
-async function scrapeWebsite(formData, folderPathWithTimestamp) {
+class ConsoleLogPlugin {
+ apply(registerAction) {
+  registerAction('onResourceSaved', ({ resource }) =>
+   console.log(`${resource.filename} downloaded successfully!`)
+  );
+ }
+}
+
+async function scrapeWebsite(formData, directoryId, websiteUrlHost) {
  const { websiteUrl, depth } = formData;
- const parsedUrl = new Url(websiteUrl);
+ const userDirectory = `${downloadDirectory}/${directoryId}/${websiteUrlHost}`;
 
  const options = {
   urls: [websiteUrl, 'https://uploads-ssl.webflow.com'],
@@ -25,16 +33,19 @@ async function scrapeWebsite(formData, folderPathWithTimestamp) {
     extensions: ['.avi', '.mp4', '.wmv', '.flv', '.mkv', '.swf', '.f4v', '.mov'],
    },
   ],
-  directory: folderPathWithTimestamp,
+  directory: userDirectory,
 
-  plugins: [new SaveToExistingDirectoryPlugin()],
+  plugins: [new SaveToExistingDirectoryPlugin(), new ConsoleLogPlugin()],
   recursive: true,
   maxRecursiveDepth: depth,
  };
 
  const result = await scrape(options);
+
+ // Log the files that were scraped
+
  if (isWebflowSite(websiteUrl)) {
-  await removeBadge(folderPathWithTimestamp, badgeTexts);
+  await removeBadge(userDirectory, badgeTexts);
  }
 }
 

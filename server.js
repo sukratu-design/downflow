@@ -1,11 +1,8 @@
 import express from 'express';
 import * as dotenv from 'dotenv';
 import cors from 'cors';
-import path from 'path';
-
+import session from 'express-session';
 import paths from './utils/paths.js';
-import index from './routes/getWebsite.js';
-import download from './routes/download.js';
 import logger from './utils/logger.js';
 dotenv.config();
 
@@ -15,10 +12,23 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use(
+ session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true,
+ })
+);
+
 app.use(express.static(publicDirectory));
+
+import index from './routes/getWebsite.js';
+import download from './routes/download.js';
+import deleteFolder from './Dev/deleteFolder.js';
 
 app.use('/getWebsite', index);
 app.use('/download', download);
+app.use('/delete', deleteFolder);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
