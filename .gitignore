@@ -2,6 +2,6 @@ node_modules
 .env
 out
 Dev
-download
+public/download
 ziped
 logs
