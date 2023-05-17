@@ -1,3 +1,10 @@
 .gcloudignore
 .git
 .gitignore
+node_modules
+.env
+out
+Dev
+public/download
+ziped
+logs
