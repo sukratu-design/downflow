@@ -13,11 +13,11 @@ async function handleSubmit(e) {
  e.preventDefault();
  message.innerHTML = '';
  const websiteUrl = document.querySelector('#url').value;
- const git = document.querySelector('#git').checked;
+ //const git = document.querySelector('#git').checked;
  const depth = document.querySelector('#depth').value;
  const data = {
   websiteUrl,
-  git,
+  //git,
   depth,
  };
  await sendUrl(data);
