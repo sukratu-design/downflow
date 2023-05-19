@@ -1,3 +1,4 @@
+// Local environment settings
 import { fileURLToPath } from 'url';
 import path from 'path';
 
