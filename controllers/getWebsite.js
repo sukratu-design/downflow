@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { body, validationResult } from 'express-validator';
+//import { body, validationResult } from 'express-validator';
 import { scrapeWebsite } from '../utils/scrape.js';
 import { createZipFile } from '../utils/archiver.js';
 import Url from 'url-parse';

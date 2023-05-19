@@ -24,11 +24,9 @@ app.use(express.static(publicDirectory));
 
 import index from './routes/getWebsite.js';
 import download from './routes/download.js';
-import deleteFolder from './Dev/deleteFolder.js';
 
 app.use('/getWebsite', index);
 app.use('/download', download);
-app.use('/delete', deleteFolder);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
