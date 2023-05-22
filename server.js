@@ -4,9 +4,11 @@ import cors from 'cors';
 import session from 'express-session';
 import paths from './utils/paths.js';
 import logger from './utils/logger.js';
+import { emptyDownloadDir } from './utils/emptyDownloadDir.js';
+
 dotenv.config();
 
-const { publicDirectory } = paths;
+const { publicDirectory, downloadDirectory } = paths;
 
 const app = express();
 app.use(cors());
@@ -21,6 +23,10 @@ app.use(
 );
 
 app.use(express.static(publicDirectory));
+
+if (process.env.NODE_ENV === 'development') {
+ emptyDownloadDir(downloadDirectory);
+}
 
 import index from './routes/getWebsite.js';
 import download from './routes/download.js';
