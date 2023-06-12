@@ -10,6 +10,8 @@ dotenv.config();
 
 const { publicDirectory, downloadDirectory } = paths;
 
+console.log(publicDirectory, downloadDirectory);
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -30,9 +32,11 @@ if (process.env.NODE_ENV === 'development') {
 
 import index from './routes/getWebsite.js';
 import download from './routes/download.js';
+import upload from './routes/uploadFile.js';
 
 app.use('/getWebsite', index);
 app.use('/download', download);
+app.use('/upload', upload);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
