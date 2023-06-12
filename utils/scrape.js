@@ -1,8 +1,7 @@
 import scrape from 'website-scraper';
-import SaveResourceToGoogleCloudStoragePlugin from '../utils/SaveResourceToGoogleCloudStoragePlugin.js';
 import CreateZipFilePlugin from '../utils/CreateZipFilePlugin.js';
 
-import { removeBadge, badgeTexts } from '../utils/removeBadge.js';
+//import { removeBadge, badgeTexts } from '../utils/removeBadge.js';
 import path from 'path';
 import paths from './paths.js';
 import logger from '../utils/logger.js';
@@ -18,40 +17,6 @@ class ConsoleLogPlugin {
  }
 }
 
-class SaveResourceToFileSystemPlugin {
- apply(registerAction) {
-  let absoluteDirectoryPath,
-   loadedResources = [];
-
-  registerAction('beforeStart', ({ options }) => {
-   if (!options.directory || typeof options.directory !== 'string') {
-    throw new Error(`Incorrect directory ${options.directory}`);
-   }
-
-   absoluteDirectoryPath = path.resolve(process.cwd(), options.directory);
-   console.log(absoluteDirectoryPath);
-
-   if (fs.existsSync(absoluteDirectoryPath)) {
-    throw new Error(`Directory ${absoluteDirectoryPath} exists`);
-   }
-  });
-
-  registerAction('saveResource', async ({ resource }) => {
-   const filename = path.join(absoluteDirectoryPath, resource.getFilename());
-   const text = resource.getText();
-   const encoding = resource.getEncoding();
-   console.log(encoding);
-   await fs.outputFile(filename, text, { encoding: resource.getEncoding() });
-   loadedResources.push(resource);
-  });
-
-  registerAction('error', async () => {
-   if (loadedResources.length > 0) {
-    await fs.remove(absoluteDirectoryPath);
-   }
-  });
- }
-}
 
 async function scrapeWebsite(formData, directoryId, websiteUrlHost) {
  const { websiteUrl, depth } = formData;
@@ -84,6 +49,7 @@ async function scrapeWebsite(formData, directoryId, websiteUrlHost) {
  };
 
  const result = await scrape(options);
+ console.log('result');
 
  // Log the files that were scraped
  /*

@@ -4,13 +4,12 @@ import cors from 'cors';
 import session from 'express-session';
 import paths from './utils/paths.js';
 import logger from './utils/logger.js';
-import { emptyDownloadDir } from './utils/emptyDownloadDir.js';
 
 dotenv.config();
 
-const { publicDirectory, downloadDirectory } = paths;
+const { publicDirectory } = paths;
 
-console.log(publicDirectory, downloadDirectory);
+console.log(publicDirectory);
 
 const app = express();
 app.use(cors());
@@ -26,17 +25,11 @@ app.use(
 
 app.use(express.static(publicDirectory));
 
-if (process.env.NODE_ENV === 'development') {
- emptyDownloadDir(downloadDirectory);
-}
-
 import index from './routes/getWebsite.js';
 import download from './routes/download.js';
-import upload from './routes/uploadFile.js';
 
 app.use('/getWebsite', index);
 app.use('/download', download);
-app.use('/upload', upload);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

@@ -21,6 +21,7 @@ async function getUrl(req, res) {
 
  try {
   const scrapedData = await scrapeWebsite(formData, directoryId, websiteUrlHost);
+  console.log(scrapedData);
   console.log('scraped');
 
   res.setHeader('Content-Type', 'application/zip');

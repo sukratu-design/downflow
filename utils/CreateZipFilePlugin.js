@@ -1,5 +1,7 @@
 import archiver from 'archiver';
 import { Readable } from 'stream';
+import fs from 'fs';
+
 
 class CreateZipFilePlugin {
  constructor() {
@@ -35,10 +37,11 @@ class CreateZipFilePlugin {
    }
 
    archive.finalize();
-   console.log(`Scraped data saved to ${zipFilename} in Google Cloud Storage.`);
-   return file.createReadStream(); 
+ 
+   console.log(`Scraped data saved to ${zipFilename}.`);
+   return file.createReadStream();
 
-/*
+   /*
    // Create a readable stream to serve the archive as a download
    const stream = Readable.from(archive, { objectMode: true });
    // Set the appropriate headers for the download
@@ -56,3 +59,20 @@ class CreateZipFilePlugin {
 }
 
 export default CreateZipFilePlugin;
+
+  //savingLocaly(zipFilename, archive);
+function savingLocaly(zipFilename, archive) {
+  const outputStream = fs.createWriteStream(zipFilename);
+  archive.pipe(outputStream);
+
+  // Event handler for when the archive finishes writing
+  outputStream.on('close', () => {
+    console.log(`Scraped data saved to ${zipFilename}.`);
+  });
+
+  // Event handler for any errors during writing
+  outputStream.on('error', (err) => {
+    console.error('Error saving the archive:', err);
+  });
+}
+
