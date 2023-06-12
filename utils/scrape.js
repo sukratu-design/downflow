@@ -1,5 +1,6 @@
 import scrape from 'website-scraper';
 import SaveResourceToGoogleCloudStoragePlugin from '../utils/SaveResourceToGoogleCloudStoragePlugin.js';
+import CreateZipFilePlugin from '../utils/CreateZipFilePlugin.js';
 
 import { removeBadge, badgeTexts } from '../utils/removeBadge.js';
 import path from 'path';
@@ -77,7 +78,7 @@ async function scrapeWebsite(formData, directoryId, websiteUrlHost) {
   directory: userDirectory,
   //directory: 'download_directory',
 
-  plugins: [new ConsoleLogPlugin(), new SaveResourceToGoogleCloudStoragePlugin()],
+  plugins: [new ConsoleLogPlugin(), new CreateZipFilePlugin()],
   recursive: true,
   maxRecursiveDepth: depth,
  };

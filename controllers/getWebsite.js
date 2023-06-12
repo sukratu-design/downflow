@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { scrapeWebsite } from '../utils/scrape.js';
 //import { createZipFile } from '../utils/archiver.js';
 import Url from 'url-parse';
+import { createReadStream } from 'fs';
 
 async function getUrl(req, res) {
  const formData = req.body;
@@ -20,7 +21,12 @@ async function getUrl(req, res) {
 
  try {
   const scrapedData = await scrapeWebsite(formData, directoryId, websiteUrlHost);
+  console.log('scraped');
 
+  res.setHeader('Content-Type', 'application/zip');
+  res.setHeader('Content-Disposition', `attachment; filename=${websiteUrlHost}.zip`);
+  const fileStream = createReadStream(scrapedData);
+  fileStream.pipe(res);
   //createZipFile(websiteUrlHost, directoryId);
 
   res.status(200).send({
