@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from 'uuid';
 import { scrapeWebsite } from '../utils/scrape.js';
 import Url from 'url-parse';
-import { createReadStream } from 'fs';
 import fs from 'fs';
-import { Readable } from 'stream';
+
+let downloadedData;
 
 async function getUrl(req, res) {
  const formData = req.body;
@@ -20,16 +20,15 @@ async function getUrl(req, res) {
  }
 
  try {
-  const readStream = await scrapeWebsite(formData, directoryId, websiteUrlHost);
+  downloadedData = await scrapeWebsite(formData, directoryId, websiteUrlHost);
   const fileName = `${websiteUrlHost}.zip`;
-  savingLocaly(fileName, readStream);
-  console.log(fileName);
-  //sendZipFileToClient(res, fileName);
+
   res.status(200).json({ message: 'You can now download', fileName });
  } catch (err) {
   res.status(400).json({ message: err.message });
  }
 }
+export { getUrl, downloadedData };
 
 //savingLocaly('zipFilename.zip', archive);
 function savingLocaly(zipFilename, archive) {
@@ -60,5 +59,3 @@ function sendZipFileToClient(res, fileName) {
   res.status(500).json({ message: 'Failed to send the ZIP file' });
  });
 }
-
-export { getUrl };

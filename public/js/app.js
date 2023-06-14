@@ -80,7 +80,26 @@ function handleDownload(e) {
   resetButton.remove(); // remove the reset button
  }, 60000); // 1 minute delay
 }
+/*
 async function downloadFile(fileName) {
+ window.location.href = `${API_URL}/download/${fileName}`;
+}
+*/
+async function downloadFile(fileName) {
+ const response = await fetch(`${API_URL}/download/${fileName}`);
+ const blob = await response.blob();
+ const url = window.URL.createObjectURL(blob);
+ const a = document.createElement('a');
+ a.style.display = 'none';
+ a.href = url;
+ a.download = fileName;
+ document.body.appendChild(a);
+ a.click();
+ window.URL.revokeObjectURL(url);
+ document.body.removeChild(a);
+}
+/*
+ async function downloadFile(fileName) {
  console.log(fileName);
  const url = `${API_URL}/download/:${fileName}`;
  const a = document.createElement('a');
@@ -91,3 +110,4 @@ async function downloadFile(fileName) {
  a.click();
  document.body.removeChild(a);
 }
+ */
