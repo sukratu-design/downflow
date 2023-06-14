@@ -1,7 +1,6 @@
 import archiver from 'archiver';
-import { Readable } from 'stream';
-import fs from 'fs';
 
+let archive;
 
 class CreateZipFilePlugin {
  constructor() {
@@ -17,9 +16,7 @@ class CreateZipFilePlugin {
    if (this.loadedResources.length === 0) {
     return;
    }
-
-   const zipFilename = 'scraped_data.zip';
-   const archive = archiver('zip', {
+   archive = archiver('zip', {
     zlib: { level: 9 }, // Compression level (0 to 9)
    });
 
@@ -35,44 +32,25 @@ class CreateZipFilePlugin {
      archive.append(buffer, { name: fileName });
     }
    }
-
    archive.finalize();
- 
-   console.log(`Scraped data saved to ${zipFilename}.`);
-   return file.createReadStream();
-
-   /*
-   // Create a readable stream to serve the archive as a download
-   const stream = Readable.from(archive, { objectMode: true });
-   // Set the appropriate headers for the download
-   const headers = {
-    'Content-Type': 'application/zip',
-    'Content-Disposition': `attachment; filename="${zipFilename}"`,
-   };
-
-   // Send the response with the archive stream and headers
-   console.log('send');
-   sendResponse({ stream, headers });
-   */
   });
  }
 }
 
-export default CreateZipFilePlugin;
+export { CreateZipFilePlugin, archive };
 
-  //savingLocaly(zipFilename, archive);
+//savingLocaly('zipFilename.zip', archive);
 function savingLocaly(zipFilename, archive) {
-  const outputStream = fs.createWriteStream(zipFilename);
-  archive.pipe(outputStream);
+ const outputStream = fs.createWriteStream(zipFilename);
+ archive.pipe(outputStream);
 
-  // Event handler for when the archive finishes writing
-  outputStream.on('close', () => {
-    console.log(`Scraped data saved to ${zipFilename}.`);
-  });
+ // Event handler for when the archive finishes writing
+ outputStream.on('close', () => {
+  console.log(`Scraped data saved to ${zipFilename}.`);
+ });
 
-  // Event handler for any errors during writing
-  outputStream.on('error', (err) => {
-    console.error('Error saving the archive:', err);
-  });
+ // Event handler for any errors during writing
+ outputStream.on('error', (err) => {
+  console.error('Error saving the archive:', err);
+ });
 }
-

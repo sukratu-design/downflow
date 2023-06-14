@@ -31,6 +31,7 @@ async function handleSubmit(e) {
 
 async function sendUrl(data) {
  const url = `${API_URL}/getWebsite`;
+
  const options = {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
@@ -45,16 +46,19 @@ async function sendUrl(data) {
   if (!response.ok) {
    throw new Error(response.statusText);
   }
-  const data = await response.json();
-  fileName = data.websiteUrlHost;
+  const responseData = await response.json();
+  console.log(responseData);
+
+  fileName = responseData.fileName;
   submitButton.removeEventListener('click', handleSubmit);
   submitButton.addEventListener('click', handleDownload);
   submitButton.textContent = 'Download Website';
-  message.innerHTML = data.message;
+  message.innerHTML = responseData.message;
  } catch (err) {
   console.error(err);
  }
 }
+
 function handleDownload(e) {
  e.preventDefault();
  downloadFile(fileName);
@@ -76,17 +80,14 @@ function handleDownload(e) {
   resetButton.remove(); // remove the reset button
  }, 60000); // 1 minute delay
 }
-
 async function downloadFile(fileName) {
- const response = await fetch(`${API_URL}/download/`);
- const blob = await response.blob();
- const url = window.URL.createObjectURL(blob);
+ console.log(fileName);
+ const url = `${API_URL}/download/:${fileName}`;
  const a = document.createElement('a');
  a.style.display = 'none';
  a.href = url;
- a.download = fileName + '.zip';
+ a.download = fileName;
  document.body.appendChild(a);
  a.click();
- window.URL.revokeObjectURL(url);
  document.body.removeChild(a);
 }

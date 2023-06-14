@@ -1,5 +1,5 @@
 import scrape from 'website-scraper';
-import CreateZipFilePlugin from '../utils/CreateZipFilePlugin.js';
+import { CreateZipFilePlugin, archive } from '../utils/CreateZipFilePlugin.js';
 
 //import { removeBadge, badgeTexts } from '../utils/removeBadge.js';
 import path from 'path';
@@ -9,14 +9,15 @@ import fs from 'fs-extra';
 
 const { downloadDirectory } = paths;
 
+let counter = 0;
 class ConsoleLogPlugin {
  apply(registerAction) {
-  registerAction('onResourceSaved', ({ resource }) =>
-   console.log(`${resource} downloaded successfully!`)
-  );
+  registerAction('onResourceSaved', ({ resource }) => {
+   counter++;
+   console.log(`${counter} ${resource.filename} downloaded successfully! `);
+  });
  }
 }
-
 
 async function scrapeWebsite(formData, directoryId, websiteUrlHost) {
  const { websiteUrl, depth } = formData;
@@ -49,9 +50,7 @@ async function scrapeWebsite(formData, directoryId, websiteUrlHost) {
  };
 
  const result = await scrape(options);
- console.log('result');
-
- // Log the files that were scraped
+ return archive;
  /*
  if (isWebflowSite(websiteUrl)) {
   await removeBadge(userDirectory, badgeTexts);  
@@ -62,6 +61,21 @@ async function scrapeWebsite(formData, directoryId, websiteUrlHost) {
 function isWebflowSite(url) {
  const website = 'webflow.io';
  return url.includes(website);
+}
+
+function savingLocaly(zipFilename, archive) {
+ const outputStream = fs.createWriteStream(zipFilename);
+ archive.pipe(outputStream);
+
+ // Event handler for when the archive finishes writing
+ outputStream.on('close', () => {
+  console.log(`Scraped data saved to ${zipFilename}.`);
+ });
+
+ // Event handler for any errors during writing
+ outputStream.on('error', (err) => {
+  console.error('Error saving the archive:', err);
+ });
 }
 
 export { scrapeWebsite };
