@@ -1,4 +1,5 @@
 import archiver from 'archiver';
+import { removeBadge, badgeTexts } from '../utils/removeBadge.js';
 
 let archive;
 
@@ -22,8 +23,13 @@ class CreateZipFilePlugin {
 
    for (const resource of this.loadedResources) {
     const fileName = resource.getFilename();
-    const fileContent = resource.getText();
+    let fileContent = resource.getText();
     const encoding = resource.getEncoding();
+    const type = resource.getType();
+
+    if (type === 'js') {
+     fileContent = await removeBadge(fileContent, badgeTexts);
+    }
 
     if (encoding === 'utf8') {
      archive.append(fileContent, { name: fileName, encoding: 'utf8' });
@@ -38,19 +44,3 @@ class CreateZipFilePlugin {
 }
 
 export { CreateZipFilePlugin, archive };
-
-//savingLocaly('zipFilename.zip', archive);
-function savingLocaly(zipFilename, archive) {
- const outputStream = fs.createWriteStream(zipFilename);
- archive.pipe(outputStream);
-
- // Event handler for when the archive finishes writing
- outputStream.on('close', () => {
-  console.log(`Scraped data saved to ${zipFilename}.`);
- });
-
- // Event handler for any errors during writing
- outputStream.on('error', (err) => {
-  console.error('Error saving the archive:', err);
- });
-}
