@@ -28,4 +28,3 @@ async function getUrl(req, res) {
  }
 }
 export { getUrl, downloadedData };
-

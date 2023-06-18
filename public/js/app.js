@@ -28,7 +28,101 @@ async function handleSubmit(e) {
  };
  await sendUrl(data);
 }
+async function sendUrl(data) {
+ const url = `${API_URL}/getWebsite`;
 
+ const options = {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(data),
+ };
+
+ try {
+  submitButton.textContent = 'Processing...';
+
+  console.log('Establishing SSE connection...');
+  const progressSource = new EventSource(`${API_URL}/progress`);
+  //progressSource.onmessage = console.log;
+
+  progressSource.addEventListener('message', (event) => {
+   const { progress } = JSON.parse(event.data);
+   console.log(progress);
+   message.innerHTML = '';
+   message.innerHTML = progress;
+  });
+
+  progressSource.onerror = () => {
+   progressSource.close();
+   console.error('Error occurred in SSE connection');
+  };
+
+  const response = await fetch(url, options);
+  if (!response.ok) {
+   throw new Error(response.statusText);
+  }
+
+  const responseData = await response.json();
+  fileName = responseData.fileName;
+
+  submitButton.removeEventListener('click', handleSubmit);
+  submitButton.addEventListener('click', handleDownload);
+  submitButton.textContent = 'Download Website';
+  message.innerHTML = responseData.message;
+ } catch (err) {
+  console.error(err);
+ }
+}
+
+/*
+async function sendUrl(data) {
+ const url = `${API_URL}/getWebsite`;
+
+ const options = {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(data),
+ };
+
+ try {
+  submitButton.textContent = 'Processing...';
+
+  const response = await fetch(url, options);
+  if (!response.ok) {
+   throw new Error(response.statusText);
+  }
+
+  const responseData = await response.json();
+  fileName = responseData.fileName;
+  console.log('Establishing SSE connection...');
+  const progressSource = new EventSource(`${API_URL}/progress`);
+  //progressSource.onmessage = console.log;
+
+  progressSource.addEventListener('message', (event) => {
+   const { progress } = JSON.parse(event.data);
+   updateProgress(progress);
+   console.log(progress);
+   console.log(event);
+  });
+
+  progressSource.onerror = () => {
+   progressSource.close();
+   console.error('Error occurred in SSE connection');
+  };
+
+  function updateProgress(progress) {
+   console.log(progress); // Update the progress on the client console
+  }
+
+  submitButton.removeEventListener('click', handleSubmit);
+  submitButton.addEventListener('click', handleDownload);
+  submitButton.textContent = 'Download Website';
+  message.innerHTML = responseData.message;
+ } catch (err) {
+  console.error(err);
+ }
+}
+*/
+/*
 async function sendUrl(data) {
  const url = `${API_URL}/getWebsite`;
 
@@ -58,7 +152,7 @@ async function sendUrl(data) {
   console.error(err);
  }
 }
-
+*/
 function handleDownload(e) {
  e.preventDefault();
  downloadFile(fileName);

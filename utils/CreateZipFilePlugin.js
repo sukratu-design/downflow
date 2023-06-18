@@ -1,13 +1,13 @@
 import archiver from 'archiver';
-import { removeBadge, badgeTexts } from '../utils/removeBadge.js';
+import removeBadgeStyles from '../utils/removeBadgeStyles.js';
 
 let archive;
 
 class CreateZipFilePlugin {
- constructor() {
+ constructor(websiteUrl) {
   this.loadedResources = [];
+  this.websiteUrl = websiteUrl;
  }
-
  apply(registerAction) {
   registerAction('saveResource', async ({ resource }) => {
    this.loadedResources.push(resource);
@@ -26,9 +26,13 @@ class CreateZipFilePlugin {
     let fileContent = resource.getText();
     const encoding = resource.getEncoding();
     const type = resource.getType();
+    const url = resource.getUrl();
 
-    if (type === 'js') {
-     fileContent = await removeBadge(fileContent, badgeTexts);
+    if (type === 'css') {
+     let websitname = extractSubdomain(this.websiteUrl);
+     if (url.includes(websitname)) {
+      fileContent = await removeBadgeStyles(fileContent);
+     }  
     }
 
     if (encoding === 'utf8') {
@@ -41,6 +45,16 @@ class CreateZipFilePlugin {
    archive.finalize();
   });
  }
+}
+
+function extractSubdomain(url) {
+ // Remove 'https://' or 'http://' from the beginning of the URL
+ let subdomain = url.replace(/^(https?:\/\/)/, '');
+
+ // Remove '.webflow.io/' from the end of the URL
+ subdomain = subdomain.replace(/\.webflow\.io\/?$/, '');
+
+ return subdomain;
 }
 
 export { CreateZipFilePlugin, archive };

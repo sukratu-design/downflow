@@ -1,18 +1,19 @@
 import scrape from 'website-scraper';
+import eventEmitter from '../utils/eventEmitter.js';
+
 import { CreateZipFilePlugin, archive } from '../utils/CreateZipFilePlugin.js';
-
-import paths from './paths.js';
-import logger from '../utils/logger.js';
-import fs from 'fs-extra';
-
-const { downloadDirectory } = paths;
 
 let counter = 0;
 class ConsoleLogPlugin {
+ constructor(eventEmitter) {
+  this.eventEmitter = eventEmitter;
+ }
  apply(registerAction) {
   registerAction('onResourceSaved', ({ resource }) => {
    counter++;
-   console.log(`${counter} ${resource.filename} downloaded successfully! `);
+   const message = `${counter} ${resource.filename} downloaded successfully!`;
+   this.eventEmitter.emit('progress', message);
+   //console.log(message);
   });
  }
 }
@@ -48,10 +49,11 @@ async function scrapeWebsite(formData) {
   ],
 
   directory: userDirectory,
-  plugins: [new ConsoleLogPlugin(), new CreateZipFilePlugin()],
+  plugins: [new ConsoleLogPlugin(eventEmitter), new CreateZipFilePlugin(websiteUrl)],
   recursive: true,
   maxRecursiveDepth: depth,
  };
+ eventEmitter.emit('progress', 'Test progress message');
 
  const result = await scrape(options);
  return archive;
