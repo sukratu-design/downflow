@@ -42,7 +42,7 @@ async function sendUrl(data) {
 
  try {
   submitButton.textContent = 'Processing...';
-
+/*
   console.log('Establishing SSE connection...');
   const progressSource = new EventSource(`${API_URL}/progress`);
   //progressSource.onmessage = console.log;
@@ -58,7 +58,7 @@ async function sendUrl(data) {
    progressSource.close();
    console.error('Error occurred in SSE connection');
   };
-
+*/
   const response = await fetch(url, options);
   if (!response.ok) {
    throw new Error(response.statusText);
