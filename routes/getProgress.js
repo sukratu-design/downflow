@@ -3,7 +3,6 @@ const router = express.Router();
 
 // SSE endpoint for progress messages
 
-//localhost:5000/progress
 router.get('/', (req, res) => {
  const eventEmitter = req.eventEmitter;
  //console.log(eventEmitter);
