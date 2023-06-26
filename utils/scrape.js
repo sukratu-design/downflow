@@ -15,6 +15,7 @@ class ConsoleLogPlugin {
    this.eventEmitter.emit('progress', message);
    //console.log(message);
   });
+  counter = 0;
  }
 }
 
