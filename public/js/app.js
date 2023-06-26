@@ -1,4 +1,6 @@
 let API_URL;
+const digitalOcean = 'https://website-downloader-89fdl.ondigitalocean.app/'
+
 if (window.location.href.includes('localhost')) {
  API_URL = 'http://localhost:5000';
 } else {
