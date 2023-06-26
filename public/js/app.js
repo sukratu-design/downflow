@@ -1,6 +1,6 @@
 let API_URL;
-const digitalOcean = 'https://website-downloader-89fdl.ondigitalocean.app/'
-const GAE = 'https://website-downloader-387015.el.r.appspot.com'
+const digitalOcean = 'https://website-downloader-89fdl.ondigitalocean.app';
+const GAE = 'https://website-downloader-387015.el.r.appspot.com';
 
 if (window.location.href.includes('localhost')) {
  API_URL = 'http://localhost:5000';
@@ -42,7 +42,7 @@ async function sendUrl(data) {
 
  try {
   submitButton.textContent = 'Processing...';
-/*
+  /*
   console.log('Establishing SSE connection...');
   const progressSource = new EventSource(`${API_URL}/progress`);
   //progressSource.onmessage = console.log;
