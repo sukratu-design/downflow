@@ -1,8 +1,6 @@
 let API_URL;
 const digitalOcean = 'https://website-downloader-89fdl.ondigitalocean.app';
 const GAE = 'https://website-downloader-387015.el.r.appspot.com';
-//const socket = io(); // Create a Socket.IO instance
-//console.log(socket);
 
 if (window.location.href.includes('localhost')) {
  API_URL = 'http://localhost:5000';
@@ -44,9 +42,8 @@ async function sendUrl(data) {
 
  try {
   submitButton.textContent = 'Processing...';
-  const socket = io(); // Create a Socket.IO instance
+  const socket = io();
   console.log('Establishing Socket.IO connection...');
-  console.log(socket);
 
   socket.on('progress', (data) => {
    message.innerHTML = data;
