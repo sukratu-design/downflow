@@ -1,5 +1,4 @@
 import scrape from 'website-scraper';
-import eventEmitter from '../utils/eventEmitter.js';
 
 import { CreateZipFilePlugin, archive } from '../utils/CreateZipFilePlugin.js';
 
@@ -55,7 +54,6 @@ async function scrapeWebsite(formData) {
   recursive: true,
   maxRecursiveDepth: depth,
  };
- eventEmitter.emit('progress', 'Test progress message');
 
  const result = await scrape(options);
  return archive;

@@ -5,7 +5,6 @@ import session from 'express-session';
 import http from 'http';
 import { Server } from 'socket.io';
 import paths from './utils/paths.js';
-import eventEmitter from './utils/eventEmitter.js';
 
 dotenv.config();
 
@@ -25,7 +24,6 @@ app.use(
 const server = http.createServer(app);
 const io = new Server(server);
 global.io = io;
-
 
 app.use(express.static(publicDirectory));
 
