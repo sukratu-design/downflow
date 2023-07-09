@@ -3,19 +3,20 @@ import eventEmitter from '../utils/eventEmitter.js';
 
 import { CreateZipFilePlugin, archive } from '../utils/CreateZipFilePlugin.js';
 
-let counter = 0;
 class ConsoleLogPlugin {
- constructor(eventEmitter) {
-  this.eventEmitter = eventEmitter;
+ static counter = 0; // Static property to keep track of the count
+
+ constructor() {
+  ConsoleLogPlugin.counter = 0;
  }
+
  apply(registerAction) {
   registerAction('onResourceSaved', ({ resource }) => {
-   counter++;
-   const message = `${counter} ${resource.filename} downloaded successfully!`;
-   this.eventEmitter.emit('progress', message);
-   //console.log(message);
+   ConsoleLogPlugin.counter++; // Increment the static counter
+   const message = `${ConsoleLogPlugin.counter} ${resource.filename} downloaded successfully!`;
+   global.io.emit('progress', message); // Emit the progress event to the server
+   console.log(message);
   });
-  counter = 0;
  }
 }
 
@@ -50,7 +51,7 @@ async function scrapeWebsite(formData) {
   ],
 
   directory: userDirectory,
-  plugins: [new ConsoleLogPlugin(eventEmitter), new CreateZipFilePlugin(websiteUrl)],
+  plugins: [new ConsoleLogPlugin(), new CreateZipFilePlugin(websiteUrl)],
   recursive: true,
   maxRecursiveDepth: depth,
  };

@@ -28,7 +28,7 @@
   "redis": "^4.6.6",
   "rimraf": "^5.0.0",
   "sanitize-filename": "^1.6.3",
-  "socket.io": "^4.6.1",
+  "socket.io": "^4.7.1",
   "url-parse": "^1.5.10",
   "uuid": "^9.0.0",
   "website-scraper": "^5.3.1",

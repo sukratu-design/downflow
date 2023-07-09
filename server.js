@@ -2,6 +2,8 @@ import express from 'express';
 import * as dotenv from 'dotenv';
 import cors from 'cors';
 import session from 'express-session';
+import http from 'http';
+import { Server } from 'socket.io';
 import paths from './utils/paths.js';
 import eventEmitter from './utils/eventEmitter.js';
 
@@ -20,12 +22,10 @@ app.use(
   saveUninitialized: true,
  })
 );
+const server = http.createServer(app);
+const io = new Server(server);
+global.io = io;
 
-// Use the eventEmitter as middleware
-app.use((req, res, next) => {
-  req.eventEmitter = eventEmitter;
-  next();
-});
 
 app.use(express.static(publicDirectory));
 
@@ -49,6 +49,6 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+server.listen(PORT, () => {
  console.log(`Server running in ${process.env.NODE_ENV} mode on port http://localhost:${PORT}`);
 });

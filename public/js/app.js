@@ -1,6 +1,8 @@
 let API_URL;
 const digitalOcean = 'https://website-downloader-89fdl.ondigitalocean.app';
 const GAE = 'https://website-downloader-387015.el.r.appspot.com';
+//const socket = io(); // Create a Socket.IO instance
+//console.log(socket);
 
 if (window.location.href.includes('localhost')) {
  API_URL = 'http://localhost:5000';
@@ -42,22 +44,17 @@ async function sendUrl(data) {
 
  try {
   submitButton.textContent = 'Processing...';
+  const socket = io(); // Create a Socket.IO instance
+  console.log('Establishing Socket.IO connection...');
+  console.log(socket);
 
-  console.log('Establishing SSE connection...');
-  const progressSource = new EventSource(`${API_URL}/progress`);
-  //progressSource.onmessage = console.log;
-
-  progressSource.addEventListener('message', (event) => {
-   const { progress } = JSON.parse(event.data);
-   console.log(progress);
-   message.innerHTML = '';
-   message.innerHTML = progress;
+  socket.on('progress', (data) => {
+   message.innerHTML = data;
   });
 
-  progressSource.onerror = () => {
-   progressSource.close();
-   console.error('Error occurred in SSE connection');
-  };
+  socket.on('disconnect', () => {
+   console.log('Socket.IO connection closed');
+  });
 
   const response = await fetch(url, options);
   if (!response.ok) {
