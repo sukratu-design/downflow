@@ -3,7 +3,7 @@ const digitalOcean = 'https://website-downloader-89fdl.ondigitalocean.app';
 const GAE = 'https://website-downloader-387015.el.r.appspot.com';
 
 if (window.location.href.includes('localhost')) {
- API_URL = 'http://localhost:5000';
+ API_URL = 'http://localhost:4000';
 } else {
  API_URL = digitalOcean;
 }

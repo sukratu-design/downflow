@@ -46,7 +46,7 @@ app.use((err, req, res, next) => {
  res.status(500).send({ error: 'An internal server error occurred.' });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 server.listen(PORT, () => {
  console.log(`Server running in ${process.env.NODE_ENV} mode on port http://localhost:${PORT}`);
 });
